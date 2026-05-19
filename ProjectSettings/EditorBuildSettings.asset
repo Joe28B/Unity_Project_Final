@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Low Poly Desert Environment/Demo/The Lost Army of Cambyses.unity
     guid: 7fa75378bc831401a8e57e7ac45f0964
+  - enabled: 1
+    path: Assets/Jack_The_Ripper.unity
+    guid: fef627c8f4e574e609f09860bfdbef23
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f3120733b4f9642a8809e89ed7579e8d, type: 2}
