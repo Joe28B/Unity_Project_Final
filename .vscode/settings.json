@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Unity_Project_Final-IsoBranch.slnx",
+    "dotnet.defaultSolution": "Unity_Project_Final.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
