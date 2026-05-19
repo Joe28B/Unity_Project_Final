@@ -7,7 +7,7 @@ using UnityEngine;
 public class NPCDialogue : MonoBehaviour
 {
     [Header("NPC Info")]
-    public string npcName = "Witness";
+    public string npcName = "NPC Name";
 
     [TextArea(2, 6)]
     public string[] dialogueLines = new string[]
@@ -24,13 +24,16 @@ public class NPCDialogue : MonoBehaviour
 
     private int _lineIndex = 0;
 
-    /// <summary>Returns the next dialogue line (cycles through all lines).</summary>
+    /// <summary>Returns the next line. Returns null if all lines have been shown.</summary>
     public string GetNextLine()
     {
+        if (_lineIndex >= dialogueLines.Length) return null;
         string line = dialogueLines[_lineIndex];
-        _lineIndex = (_lineIndex + 1) % dialogueLines.Length;
+        _lineIndex++;
         return line;
     }
+
+    public bool IsFinished() => _lineIndex >= dialogueLines.Length;
 
     public string GetNPCName() => npcName;
 

@@ -117,6 +117,14 @@ public class NPCDialogueUI : MonoBehaviour
         IsOpen = true;
     }
 
+    public void ShowPrompt(string message)
+    {
+        _nameText.text = "";
+        _bodyText.text = message;
+        _panel.SetActive(true);
+        IsOpen = true;
+    }
+
     public void Hide()
     {
         if (_panel != null) _panel.SetActive(false);
