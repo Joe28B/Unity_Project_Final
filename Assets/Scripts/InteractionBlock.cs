@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI; // Required to handle the Button component
 
-public class ButtonInteractTrigger : MonoBehaviour
+public class DockButtonInteractTrigger : MonoBehaviour
 {
     [Header("UI References")]
     [SerializeField] private Button targetButton;          // Reference to your TextMeshPro Button

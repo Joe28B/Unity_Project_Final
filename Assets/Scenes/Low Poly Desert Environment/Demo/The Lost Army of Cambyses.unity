@@ -11827,33 +11827,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 456029660}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &365836082
-Rigidbody:
+--- !u!114 &365836089
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365836081}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.CharacterControllerDriver
+  m_LocomotionProvider: {fileID: 0}
+  m_MinHeight: 0
+  m_MaxHeight: Infinity
 --- !u!1 &366047341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3908896426618710466, guid: 3d672b1b497d64e48aa47e37b86514bb, type: 3}
@@ -13067,6 +13055,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 333062900}
     m_Modifications:
+    - target: {fileID: 889020405108436002, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 889020405108436002, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2239921583232308477, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
       propertyPath: m_Name
       value: Cliff_01 (2)
@@ -13118,6 +13114,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2239921583232308477, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1874439577}
+    - targetCorrespondingSourceObject: {fileID: 2239921583232308477, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1874439581}
   m_SourcePrefab: {fileID: 100100000, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
 --- !u!4 &394594497 stripped
 Transform:
@@ -13657,7 +13656,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
-  serializedVersion: 13
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.5
@@ -13709,7 +13708,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShapeRadius: 0
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -14902,6 +14901,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1316853283282549446, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14967,6 +14970,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_StepOffset
       value: 2
       objectReference: {fileID: 0}
@@ -14976,7 +14987,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 365836082}
+      addedObject: {fileID: 365836089}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!1001 &456676027
 PrefabInstance:
@@ -49954,6 +49965,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2239921583232308477, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1380242748}
+    - targetCorrespondingSourceObject: {fileID: 2239921583232308477, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1380242751}
   m_SourcePrefab: {fileID: 100100000, guid: 125f7efe8f91aff4abd37bd1d4e5970f, type: 3}
 --- !u!4 &1380242744 stripped
 Transform:
@@ -49975,13 +49989,26 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: 43b5e7a74f9a76a4da28ec63b62380c5, type: 3}
+--- !u!114 &1380242751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377911128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b897d70d993438b4bbcacac65441521f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerTeleportLevel
+  sceneToLoad: scene2
 --- !u!1001 &1383735678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70166,6 +70193,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: 43b5e7a74f9a76a4da28ec63b62380c5, type: 3}
+--- !u!114 &1874439581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874439573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b897d70d993438b4bbcacac65441521f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerTeleportLevel
+  sceneToLoad: scene2
 --- !u!1001 &1875933255
 PrefabInstance:
   m_ObjectHideFlags: 0
