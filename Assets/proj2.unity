@@ -23116,10 +23116,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5547566332055652938, guid: 39b29c640ffe9d6449186f94ce049d88, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7333936856254601563, guid: 39b29c640ffe9d6449186f94ce049d88, type: 3}
       propertyPath: m_Name
       value: Barrier_02
@@ -23167,10 +23163,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7333936856254601563, guid: 39b29c640ffe9d6449186f94ce049d88, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1878563249}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39b29c640ffe9d6449186f94ce049d88, type: 3}
 --- !u!1001 &129175083
 PrefabInstance:
@@ -31351,7 +31344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009623014bac18b4cb61fa15bd93bc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  interactRadius: 5
+  interactRadius: 3
 --- !u!114 &168524659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31364,24 +31357,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4ed63c738393a4192c65d5bc73d445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: NPC Name
+  npcName: Civilian
   dialogueLines:
-  - The Zodiac Killer was an unidentified serial killer active in Northern California
-    in the late 1960s and early 1970s.
-  - He is confirmed to have killed at least five people, though he claimed 37 victims
-    in his taunting letters to police.
-  - "The Zodiac sent a series of cryptic ciphers to newspapers. Only one of the four
-    ciphers \u2014 the Z408 \u2014 has ever been fully solved."
-  - His victims were attacked in Benicia, Vallejo, Lake Berryessa, and San Francisco
-    between December 1968 and October 1969.
-  - The killer gave himself the name 'Zodiac' in a letter to the San Francisco Chronicle
-    in August 1969.
-  - Despite extensive investigation, the Zodiac's identity has never been officially
-    confirmed. The case remains open.
-  - Arthur Leigh Allen was long considered the prime suspect by many investigators,
-    but DNA and fingerprint evidence never conclusively tied him to the crimes.
-  - The Zodiac's last confirmed letter was sent in 1974, containing a reference to
-    the film 'The Exorcist'. He was never heard from again.
+  - DID YOU HEAR!!?
+  - The Zodiac killer  is confirmed to have killed at least five people, though he
+    claimed 37 victims in his taunting letters to police.
+  - The Zodiac sent a series of cryptic ciphers to newspapers. Only one of the four
+    ciphers (the Z408) has ever been found and fully solved.
+  - I think of leaving town with my family! Until they caught him, i'll be out of
+    here.
 --- !u!1001 &169938033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55390,24 +55374,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4ed63c738393a4192c65d5bc73d445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: NPC Name
+  npcName: Witness
   dialogueLines:
-  - The Zodiac Killer was an unidentified serial killer active in Northern California
-    in the late 1960s and early 1970s.
-  - He is confirmed to have killed at least five people, though he claimed 37 victims
-    in his taunting letters to police.
-  - "The Zodiac sent a series of cryptic ciphers to newspapers. Only one of the four
-    ciphers \u2014 the Z408 \u2014 has ever been fully solved."
-  - His victims were attacked in Benicia, Vallejo, Lake Berryessa, and San Francisco
-    between December 1968 and October 1969.
-  - The killer gave himself the name 'Zodiac' in a letter to the San Francisco Chronicle
-    in August 1969.
-  - Despite extensive investigation, the Zodiac's identity has never been officially
-    confirmed. The case remains open.
-  - Arthur Leigh Allen was long considered the prime suspect by many investigators,
-    but DNA and fingerprint evidence never conclusively tied him to the crimes.
-  - The Zodiac's last confirmed letter was sent in 1974, containing a reference to
-    the film 'The Exorcist'. He was never heard from again.
+  - '!!?'
+  - People are trying to escape town
+  - The Zodiac Killer has sparked fear and panic among people
 --- !u!114 &289452761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55420,7 +55391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009623014bac18b4cb61fa15bd93bc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  interactRadius: 5
+  interactRadius: 3
 --- !u!1001 &289562568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70404,10 +70375,21 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[9]'
       value: 
       objectReference: {fileID: 2100000, guid: 2100b85841ac32940a50ec36409b49c0, type: 2}
+    - target: {fileID: 64384076755112708, guid: daa1a100f65deb34787ae1bb55d44a76, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64384076755112708, guid: daa1a100f65deb34787ae1bb55d44a76, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1769148396902374, guid: daa1a100f65deb34787ae1bb55d44a76, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1381516107}
   m_SourcePrefab: {fileID: 100100000, guid: daa1a100f65deb34787ae1bb55d44a76, type: 3}
 --- !u!1001 &374491657
 PrefabInstance:
@@ -80299,8 +80281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6211eb716e3afd846a2cf598111615c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  walkSpeed: 5
-  sprintSpeed: 10
+  walkSpeed: 2
+  sprintSpeed: 5
   rotationSpeed: 0
   gravity: -20
   groundMask:
@@ -80318,8 +80300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6211eb716e3afd846a2cf598111615c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  walkSpeed: 5
-  sprintSpeed: 10
+  walkSpeed: 2
+  sprintSpeed: 5
   rotationSpeed: 0
   gravity: -20
   groundMask:
@@ -87742,63 +87724,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4135480120554540, guid: f24cfa7ea7c5c764dad9dddadf04cde2, type: 3}
   m_PrefabInstance: {fileID: 465171981}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &465247324
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -317.673
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 70.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 29.949104
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3992058561654064293, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
-      propertyPath: m_Name
-      value: Portal green
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
 --- !u!1001 &465823588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136039,6 +135964,75 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &702753027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.36433646
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.013436875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7288907
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -303.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 70.485
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.1502
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84617317
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.378491
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.28152862
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.24794592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 50.117
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174528196229721512, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 46.975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8807372610881959698, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
+      propertyPath: m_Name
+      value: PT_Book_open_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09b16a54cb1a8dd499ce39ba08ce6cf0, type: 3}
 --- !u!1001 &702758873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247066,6 +247060,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+--- !u!1001 &1284336060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -290.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 70.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907679614406300944, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3992058561654064293, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
+      propertyPath: m_Name
+      value: Portal green
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 13c990b8270c70b4c9f196019286028c, type: 3}
 --- !u!1001 &1284833132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -268032,6 +268095,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4737365782299246, guid: 0509744eed6f16e4c98e542f790a84b5, type: 3}
   m_PrefabInstance: {fileID: 1381258148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1381516102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1769148396902374, guid: daa1a100f65deb34787ae1bb55d44a76, type: 3}
+  m_PrefabInstance: {fileID: 373664192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1381516107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381516102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b897d70d993438b4bbcacac65441521f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerTeleportLevel
+  sceneToLoad: scene2
 --- !u!1001 &1382333246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324589,10 +324670,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1380420854}
     m_Modifications:
-    - target: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_MoveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
       value: 1
@@ -333061,24 +333138,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4ed63c738393a4192c65d5bc73d445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  npcName: NPC Name
+  npcName: Police
   dialogueLines:
-  - The Zodiac Killer was an unidentified serial killer active in Northern California
-    in the late 1960s and early 1970s.
-  - He is confirmed to have killed at least five people, though he claimed 37 victims
-    in his taunting letters to police.
-  - "The Zodiac sent a series of cryptic ciphers to newspapers. Only one of the four
-    ciphers \u2014 the Z408 \u2014 has ever been fully solved."
-  - His victims were attacked in Benicia, Vallejo, Lake Berryessa, and San Francisco
-    between December 1968 and October 1969.
-  - The killer gave himself the name 'Zodiac' in a letter to the San Francisco Chronicle
-    in August 1969.
-  - Despite extensive investigation, the Zodiac's identity has never been officially
-    confirmed. The case remains open.
-  - Arthur Leigh Allen was long considered the prime suspect by many investigators,
-    but DNA and fingerprint evidence never conclusively tied him to the crimes.
-  - The Zodiac's last confirmed letter was sent in 1974, containing a reference to
-    the film 'The Exorcist'. He was never heard from again.
+  - Look what we found while we were searching in the trash
+  - Right after we found the deceased body. the investigator found this letter
+  - Its a cipher text
 --- !u!1001 &1700838306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367882,24 +367946,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878549537}
   m_Mesh: {fileID: 4300000, guid: 7e628f32de81f4b49a72746359f3dab3, type: 3}
---- !u!1 &1878563248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7333936856254601563, guid: 39b29c640ffe9d6449186f94ce049d88, type: 3}
-  m_PrefabInstance: {fileID: 129114413}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1878563249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878563248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b897d70d993438b4bbcacac65441521f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerTeleportLevel
-  sceneToLoad: scene2
 --- !u!1001 &1879311399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369777,6 +369823,135 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4241129891546564, guid: 0d994adf9f1bb3048b05c73f76d42756, type: 3}
   m_PrefabInstance: {fileID: 1889359902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1889404236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889404238}
+  - component: {fileID: 1889404237}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1889404237
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889404236}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: c7ecec8f00dd1c447b83f9af38519b6e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1889404238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889404236}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -308.4229, y: 69.76448, z: 14.13686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889516941
 GameObject:
   m_ObjectHideFlags: 0
@@ -426462,4 +426637,6 @@ SceneRoots:
   - {fileID: 33542582}
   - {fileID: 912448913}
   - {fileID: 935368389}
-  - {fileID: 465247324}
+  - {fileID: 702753027}
+  - {fileID: 1889404238}
+  - {fileID: 1284336060}
